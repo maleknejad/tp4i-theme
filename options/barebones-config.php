@@ -217,6 +217,62 @@
             ),
         )
     ) );
+    Redux::setSection( $opt_name, array(
+        'title' => __( 'فوتر', 'tp4-framework-demo' ),
+        'id'    => 'footer',
+        'icon'  => 'el el-braille',
+         'fields'     => array(
+             array(
+                'id'          => 'url-insta',
+                'type'        => 'text',
+                'title'       => __( 'لینک اینستاگرام', 'redux-framework-demo' ), 
+                'placeholder' => 'http://instagram.com/@example',
+            ),
+             array(
+                'id'          => 'url-bale',
+                'type'        => 'text',
+                'title'       => __( 'لینک بله', 'redux-framework-demo' ), 
+                'placeholder' => 'لینک کامل',
+            ),
+             array(
+                'id'          => 'url-telegram',
+                'type'        => 'text',
+                'title'       => __( 'لینک تلگرام', 'redux-framework-demo' ), 
+                'placeholder' => 'لینک کامل',
+            ),
+             array(
+                'id'          => 'url-sorush',
+                'type'        => 'text',
+                'title'       => __( 'لینک سروش', 'redux-framework-demo' ), 
+                'placeholder' => 'لینک کامل',
+            ),
+             array(
+                'id'          => 'url-twitter',
+                'type'        => 'text',
+                'title'       => __( 'لینک توییتر', 'redux-framework-demo' ), 
+                'placeholder' => 'لینک کامل',
+            ),
+             array(
+                'id'          => 'url-aparat',
+                'type'        => 'text',
+                'title'       => __( 'لینک آپارات', 'redux-framework-demo' ), 
+                'placeholder' => 'لینک کامل',
+            ),
+             array(
+                'id'          => 'footer-desc',
+                'type'        => 'textarea',
+                'title'       => __( 'توضیحات در فوتر ', 'redux-framework-demo' ), 
+                'placeholder' => 'متن توضیحات درباره سایت',
+            ),
+               array(
+                'id'          => 'footer-copy-right',
+                'type'        => 'text',
+                'title'       => __( 'متن کپی رایت', 'redux-framework-demo' ), 
+                'placeholder' => 'متن کپی رایت',
+            ),
+        )
+    ) );
+
 
     /*
      * <--- END SECTIONS
