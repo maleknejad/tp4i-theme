@@ -13,5 +13,13 @@
                 </div>
             </section>
             <div class="container">
-                <div class="banner-overlay"><img src="<?php echo get_stylesheet_directory_uri(). '/demo-images/banner-1.jpg' ?>" alt="banner"><a href="#" title="title">میزان مشارکت در رأی گیری و حضور و غیاب نمایندگان منتشر شد</a></div>
+                <?php
+                global $redux_tp4;
+
+foreach ($redux_tp4['opt-slider'] as $slide) {?>
+ <div class="banner-overlay"><img src="<?php echo $slide['image'] ?>" alt="banner"><a href="#" title="title"><?php echo $slide['title'] ?></a></div>
+ 
+<?php } ?>
+ 
+               
             </div>
