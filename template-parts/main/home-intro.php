@@ -12,14 +12,4 @@
                     </ul>
                 </div>
             </section>
-            <div class="container">
-                <?php
-                global $redux_tp4;
-
-foreach ($redux_tp4['opt-slider'] as $slide) {?>
- <div class="banner-overlay"><img src="<?php echo $slide['image'] ?>" alt="banner"><a href="#" title="title"><?php echo $slide['title'] ?></a></div>
- 
-<?php } ?>
- 
-               
-            </div>
+   

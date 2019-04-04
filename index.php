@@ -13,7 +13,9 @@
      <!-- content-->
         <div class="main-content">
         <?php get_template_part('template-parts/main/home', 'intro');?>   
+        <?php get_template_part('template-parts/main/home', 'slider');?>
         <?php get_template_part('template-parts/main/home', 'latestPost');?>
+
    
             <section class="working-wrapper mt-5">
                 <div class="container">

@@ -142,3 +142,13 @@ html {
 .grid-sizer {
       width: 20%;
 }
+.slider a img{
+position: relative;
+}
+.slider a h3{
+position: absolute;
+top:45%;
+font-weight: bold;
+text-align: center;
+width: 100%;
+}
