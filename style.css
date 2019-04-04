@@ -1,0 +1,144 @@
+﻿/*!
+Theme Name: شفافیت برای ایران
+Author: Mahdi Khodadadi
+Author URI: http://pixeler.ir/
+Version: 1.0.0
+
+*/
+:root {
+      --blue: #1f4b90;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #cf2035;
+      --orange: #fd7e14;
+      --yellow: #ffd25e;
+      --green: #219653;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray-dark: #3a3a3a;
+      --primary: #1f4b90;
+      --secondary: #7f7460;
+      --success: #219653;
+      --info: #26a0c1;
+      --warning: #ffd25e;
+      --danger: #cf2035;
+      --light: #f9f9f9;
+      --dark: #3a3a3a;
+      --gray: #767676;
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+      --breakpoint-xx: 1280px;
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+      margin: 0;
+      padding: 0;
+}
+
+.category .container {
+      position: relative;
+}
+
+.category .rss {
+      position: absolute;
+      left: 5px;
+      top: 0;
+      transition: all 0.3s;
+}
+
+.category .rss:hover {
+      opacity: 0.8;
+}
+
+.category li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 10px;
+
+}
+
+.category li a {
+      color: #222;
+}
+
+.category li.head {
+      font-weight: bold;
+      color: var(--blue);
+
+}
+
+.category ul.submenu {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s,
+            opacity 0.3s ease-in-out;
+      position: absolute;
+      background: #fff;
+      padding: 0;
+      width: 150px;
+      border: 1px solid #eee;
+      z-index: 99;
+}
+
+.category ul.submenu li {
+      display: block;
+      margin-left: 0;
+}
+
+.category li:hover>ul.submenu {
+      visibility: visible;
+      opacity: 1;
+}
+
+.category>li:after {}
+
+.category li>ul.submenu li:hover {
+      background-color: #eee;
+}
+
+.category li>ul.submenu li a {
+      padding: 5px 10px;
+      display: block;
+}
+
+.category li>ul.submenu li a:hover {
+      color: var(--blue);
+}
+
+.wp-pagenavi a,
+.wp-pagenavi .current,
+.wp-pagenavi .extend {
+      font-size: 1.4rem;
+      padding: 5px 8px;
+      float: right;
+}
+
+.wp-pagenavi .current {
+      font-weight: bold;
+      background: #1f4b90;
+      color: #fff;
+      border-radius: 39px;
+      width: 50px;
+      margin: 0 7px;
+}
+
+.grid-item:nth-child(odd) {
+      width: 40%;
+      padding-left: 20px;
+}
+
+.grid-item:nth-child(even) {
+
+      width: 60%;
+}
+
+.grid-sizer {
+      width: 20%;
+}
