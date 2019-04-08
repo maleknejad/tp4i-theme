@@ -207,6 +207,12 @@
         'subsection' => true,
         'fields'     => array(
             array(
+                'id'          => 'header-desc',
+                'type'        => 'textarea',
+                'title'       => __( 'توضیحات بالای صفحه اول  ', 'redux-framework-demo' ), 
+                'placeholder' => 'متن توضیحات درباره سایت',
+            ),
+            array(
                 'id'          => 'opt-slider',
                 'type'        => 'slides',
                 'title'       => __( 'انتخاب اسلایدها', 'tp4-framework-demo' ),
