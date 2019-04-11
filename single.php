@@ -76,23 +76,14 @@
          
         
     </div>
-    <!-- <div id="comments">
-        <div class="container comment-form">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-4"><input class="form-control" type="text"
-                            placeholder="نام و نام خانوادگی"></div>
-                    <div class="form-group col-md-4"><input class="form-control" type="text" placeholder="ایمیل"></div>
-                    <div class="form-group col-md-4"><input class="form-control ltr" type="text" placeholder="http://">
-                    </div>
-                    <div class="form-group col-12"><textarea class="form-control" cols="30" rows="8"
-                            placeholder="دیدگاه خود را با ما در میان بگذارید"></textarea></div>
-                    <div class="form-group"><button class="btn btn-warning rounded-pill px-5" type="submit">ارسال
-                            دیدگاه</button></div>
-                </div>
-            </form>
-        </div>
-    </div> -->
+    <?php 
+    // If comments are open or we have at least one comment, load up the comment template.
+if (comments_open() || get_comments_number()):
+    comments_template();
+endif;
+
+    ?>
+
 </div>
 
 <?php get_footer();?>
