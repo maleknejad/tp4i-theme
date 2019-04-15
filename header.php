@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 
     <head>
-        <title><?php echo get_the_title(); ?></title>
+        <title><?php the_title(); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
