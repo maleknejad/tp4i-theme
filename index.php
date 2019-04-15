@@ -133,12 +133,12 @@
                     <div class="slider row owl-carousel owl-rtl  owl-drag" data-items="4">
                           <?php
 global $redux_tp4;
-foreach ($redux_tp4['sponsor-slider'] as $slide) {?>
+foreach ($redux_tp4['opt-sponsor'] as $slide) {?>
                        
                
                         <div class="sponsor">
                             <a href="<?php echo gf; ?>"><img src="<?php echo $slide['image'] ?>" alt="banner">
-                                <h3 class="text-white"><?php echo $slide['title'] ?></h3>
+                                <h3 class="text-dark"><?php echo $slide['title'] ?></h3>
                             </a>
                         </div>
                           <?php }?>
