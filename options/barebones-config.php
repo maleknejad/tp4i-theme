@@ -202,8 +202,8 @@
     ) );
 
   Redux::setSection( $opt_name, array(
-        'title'      => __( 'اسلایدر', 'tp4-framework-demo' ),
-        'id'         => 'slider',
+        'title'      => __( 'دیباچه', 'tp4-framework-demo' ),
+        'id'         => 'intro',
         'subsection' => true,
         'fields'     => array(
             array(
@@ -212,6 +212,15 @@
                 'title'       => __( 'توضیحات بالای صفحه اول  ', 'redux-framework-demo' ), 
                 'placeholder' => 'متن توضیحات درباره سایت',
             ),
+   
+        )
+    ) );
+  Redux::setSection( $opt_name, array(
+        'title'      => __( 'اسلایدر', 'tp4-framework-demo' ),
+        'id'         => 'slider',
+        'subsection' => true,
+        'fields'     => array(
+           
             array(
                 'id'          => 'opt-slider',
                 'type'        => 'slides',
@@ -219,10 +228,32 @@
                 'placeholder' => array(
                     'title'       => __( 'انتخاب عنوان روی عکس', 'tp4-framework-demo' ),
                     'url'         => __( 'لینک عکس', 'tp4-framework-demo' ),
-                ),
+                ), 
             ),
+                 
+         
         )
     ) );
+  Redux::setSection( $opt_name, array(
+        'title'      => __( 'حامیان', 'tp4-framework-demo' ),
+        'id'         => 'sponsors',
+        'subsection' => true,
+        'fields'     => array(
+           
+            array(
+                'id'          => 'opt-sponsor',
+                'type'        => 'slides',
+                'title'       => __( 'اضافه کردن اسپانسر', 'tp4-framework-demo' ),
+                'placeholder' => array(
+                    'title'       => __( 'انتخاب عنوان روی عکس', 'tp4-framework-demo' ),
+                    'url'         => __( 'لینک عکس', 'tp4-framework-demo' ),
+                ), 
+            ),
+                 
+         
+        )
+    ) );
+
     Redux::setSection( $opt_name, array(
         'title' => __( 'فوتر', 'tp4-framework-demo' ),
         'id'    => 'footer',

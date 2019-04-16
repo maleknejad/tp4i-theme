@@ -98,7 +98,7 @@
                     </div>
                 </div><a class="btn btn-primary rounded-pill btn-icon-left mt-3" href="#" title="دیدن همه سامانه‌ها"><span>دیدن همه سامانه‌ها</span><i class="icon icon-left"></i></a>
             </section> -->
-            <!-- <section class="mt-2 py-5 bg-gray-100">
+            <section class="mt-2 py-5 bg-gray-100">
                 <div class="container">
                     <div class="legend">
                         <div class="legend-title">پروژه‌ها</div>
@@ -124,7 +124,30 @@
                         </div>
                     </div><a class="btn btn-primary rounded-pill btn-icon-left mt-3" href="#" title="دیدن همه پروژه‌ها"><span>دیدن همه پروژه‌ها</span><i class="icon icon-left"></i></a>
                 </div>
-            </section> -->
+            </section> 
+            <section class="mt-2 py-5 ">
+                <div class="container">
+                    <div class="legend">
+                        <div class="legend-title">حامیان</div>
+                        <a class="btn btn-md btn-sponsor h6 btn-warning rounded-pill" href="#">چطور حامی شفافیت باشیم؟</a>
+                    </div>
+                    <div class="sponsors row owl-carousel owl-rtl  owl-drag" data-items="5">
+                          <?php
+                        global $redux_tp4;
+                        foreach ($redux_tp4['opt-sponsor'] as $slide) {?>
+                                            
+               
+                        <div class="sponsor">
+                            <a href="<?php echo gf; ?>"><img src="<?php echo $slide['image'] ?>" alt="banner">
+                                <h3 class="text-dark h6"><?php echo $slide['title'] ?></h3>
+                            </a>
+                        </div>
+               
+          
+                          <?php }?>
+                    </div>
+                </div>
+            </section> 
             <section class="container py-5 mt-3">
                 <div class="row">
                     <div class="col-12 col-md-6">
