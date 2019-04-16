@@ -129,18 +129,21 @@
                 <div class="container">
                     <div class="legend">
                         <div class="legend-title">حامیان</div>
+                        <a class="btn btn-md btn-sponsor h6 btn-warning rounded-pill" href="#">چطور حامی شفافیت باشیم؟</a>
                     </div>
-                    <div class="slider row owl-carousel owl-rtl  owl-drag" data-items="4">
+                    <div class="sponsors row owl-carousel owl-rtl  owl-drag" data-items="5">
                           <?php
-global $redux_tp4;
-foreach ($redux_tp4['opt-sponsor'] as $slide) {?>
-                       
+                        global $redux_tp4;
+                        foreach ($redux_tp4['opt-sponsor'] as $slide) {?>
+                                            
                
                         <div class="sponsor">
                             <a href="<?php echo gf; ?>"><img src="<?php echo $slide['image'] ?>" alt="banner">
-                                <h3 class="text-dark"><?php echo $slide['title'] ?></h3>
+                                <h3 class="text-dark h6"><?php echo $slide['title'] ?></h3>
                             </a>
                         </div>
+               
+          
                           <?php }?>
                     </div>
                 </div>
