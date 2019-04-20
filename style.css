@@ -180,6 +180,7 @@ width: 100%;
 }
 .owl-carousel .sponsor img {
       width: auto !important;
+      height: 160px;
       margin:0 auto;
 }
 .btn-sponsor{
