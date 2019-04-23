@@ -122,7 +122,7 @@ html {
 
 .wp-pagenavi .current {
       font-weight: bold;
-      background: #1f4b90;
+      background: var(--blue);
       color: #fff;
       border-radius: 39px;
       width: 50px;
@@ -186,4 +186,53 @@ width: 100%;
 .btn-sponsor{
       position: absolute;
       left:0;
+}
+.lesson{
+      background-color: var(--blue);
+      display: block;
+      height: 200px;
+      transition: all 0.3s;
+      position: relative;
+}
+.lesson:hover{
+      opacity: 0.8;
+}
+.lesson span.star{
+      display: none;
+}
+
+.lesson span.star.display1{
+      display: block;
+  
+          left: 20px;
+          top: 18px;
+          position: absolute;
+}
+.lesson .top-info{
+      position: relative;
+      height: 40px;
+}
+.lesson .top-info .code{
+      position: absolute;
+      right: 20px;
+      display: block;
+      top:15px;
+}
+.lesson .time{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+}
+.lesson .time .icon{
+          margin-top: 4px;
+          margin-left: 6px;
+}
+.max-lines {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5em;
+    max-height: 3.7em;
 }
