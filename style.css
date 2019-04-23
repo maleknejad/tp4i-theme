@@ -188,11 +188,17 @@ width: 100%;
       left:0;
 }
 .lesson{
-      background-color: var(--blue);
+      
       display: block;
       height: 200px;
       transition: all 0.3s;
       position: relative;
+}
+.tag-section:nth-child(n) .lesson {
+      background-color: var(--blue);
+}
+.tag-section:nth-child(3n) .lesson {
+      background-color: var(--cyan);
 }
 .lesson:hover{
       opacity: 0.8;

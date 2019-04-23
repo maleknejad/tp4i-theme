@@ -6,16 +6,24 @@ get_header();?>
 <!-- content-->
 <div class="main-content">
 
+  <div class="page-cover"><img src="<?php echo get_stylesheet_directory_uri(). '/demo-images/academy.jpg' ?>" alt="<?php the_title();?>"></div>
+<div class="container">
+<h2 class="mt-4 mb-2 font-weight-bold">آکادمی شفافیت</h2>
+  <p>
+  «شفافیت» ظاهری ساده و همه فهم دارد، اما بهره‌مندی از ثمرات و برکات آن تنها وقتی محقق می‌شود که از جزئیات و مصادیق آن در بستر موضوعات مختلف آگاهی کافی حاصل شده باشد. به همین دلیل، دوره آموزشی زیر برای علاقه‌مندان به شفافیت طراحی گردیده است.
+  </p>
+   <a class="btn btn-warning rounded-pill mb-2 mt-2" href="<?php echo get_site_url(); ?>/">قبل از شروع دوره حتما بخوانید</a>
+</div>
 
-  <section class="container">
+  <section class="container mb-5">
 
     <?php
 //Get terms for this taxonomy - orders by name ASC by default
 $terms = get_terms('subject');
-$i=0;
+
 //Loop through each term
 foreach($terms as $term):
-$i++;
+
    //Query posts by term. 
    $args = array(
      'post_type' => 'academy',
@@ -31,14 +39,19 @@ $i++;
 
     //Does tag have posts?
     if($tag_query->have_posts()):
-
+echo '<div class="tag-section">';
         //Display tag title
-        echo '<h2>'.esc_html($term->name).'</h2>'; ?>
-    <div class="row">
+        echo '<h3 class="mb-3 h4 mt-5 font-weight-bold">'.esc_html($term->name).'</h3>'; ?>
+    <div class="row ">
 
       <?php  while($tag_query->have_posts()):$tag_query->the_post(); ?>
 
-      <div class="col-md-3 <?php echo 'cat-'.$i;?>">
+      <div class="col-md-3 mb-2  <?php $status = get_field('status'); 
+        if($status=="online"){echo 'online';}
+        if($status=="soon"){echo 'soon';}
+        if($status=="future"){echo 'future';}
+      ?>"
+     >
         <a class="lesson" href="<?php the_permalink(); ?>">
           <div class="top-info">
             <span class="star display<?php echo the_field('required'); ?>">
@@ -55,6 +68,7 @@ $i++;
       </div>
 
       <?php endwhile; ?>
+    </div>
     </div>
     <?php  endif; //End if $tag_query->have_posts
     wp_reset_postdata();
