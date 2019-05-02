@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
                 <form class="text-center subscribe-form" action="/">
-                    <div class="subscribe-title">اولین نفر باشید که مطلع می‌شوید</div>
+                    <div class="subscribe-title">اولین نفر باشید که از شفافیت برای ایران مطلع می‌شوید</div>
                     <div class="input-group mb3"><input class="form-control" type="email" name="email"
                             placeholder="ایمیل خود را وارد کنید">
                         <div class="input-group-append"><button class="btn btn-info" type="submit">اشتراک</button></div>
